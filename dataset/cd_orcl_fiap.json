@@ -1,0 +1,12 @@
+{
+	"name": "cd_orcl_fiap",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "orcl_fiap",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "OracleTable",
+		"schema": []
+	}
+}

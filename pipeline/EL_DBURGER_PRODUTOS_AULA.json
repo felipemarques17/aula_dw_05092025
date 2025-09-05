@@ -1,0 +1,38 @@
+{
+	"name": "EL_DBURGER_PRODUTOS_AULA",
+	"properties": {
+		"activities": [
+			{
+				"name": "Copy data1",
+				"type": "Copy",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"source": {
+						"type": "OracleSource",
+						"oracleReaderQuery": "SELECT CD_SUB_CATEGORIA_PROD, CD_CATEGORIA_PROD, DS_SUB_CATEGORIA_PROD, ST_SUB_CATEGORIA_PROD FROM DBURGER.DB_SUB_CATEGORIA_PROD;",
+						"partitionOption": "None",
+						"numberPrecision": 38,
+						"numberScale": 18,
+						"queryTimeout": "02:00:00"
+					},
+					"enableStaging": false
+				},
+				"inputs": [
+					{
+						"referenceName": "cd_orcl_fiap",
+						"type": "DatasetReference"
+					}
+				]
+			}
+		],
+		"annotations": []
+	}
+}
