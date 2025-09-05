@@ -1,0 +1,9 @@
+{
+	"name": "rm555191-dw",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "1a8ee0bb-08e9-49dd-8ab8-8c25895df89d",
+		"tenantId": "11dbbfe2-89b8-4549-be10-cec364e59551"
+	}
+}
