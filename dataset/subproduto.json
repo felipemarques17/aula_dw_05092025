@@ -1,0 +1,26 @@
+{
+	"name": "subproduto",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "origemoracle",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "TabelasDBURGERoracle"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "subproduto",
+				"container": "origemoracle"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": false,
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}
